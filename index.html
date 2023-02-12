@@ -4,11 +4,363 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../linkedInClone/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d88601cf3b.js" crossorigin="anonymous"></script>
 </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-body-tertiary">
+    <!--Navbar Start-->
+  
+    <nav class="navbar fixed-top navbar-expand-lg border-bottom">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+              <img src="../linkedInClone/assets/LI-In-Bug.png" alt="Bootstrap" width="40" >
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-5" type="search" placeholder="Arama Yap" aria-label="Search">
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link nav-menu active nav-menu me-4" aria-current="page" href="#" >
+                   <i class="fa-solid fa-house-chimney"></i>
+                   <h6 class ="mt-2">Ana Sayfa</h6 >
+                </a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link nav-menu me-4 " href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <h6 class ="mt-2">Ağım</h6 >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-menu me-4" href="#">
+                    <i class="fa-solid fa-briefcase "></i>
+                    <h6 class ="mt-2">İş İlanları</h6>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-menu me-4" href="#">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <h6 class ="mt-2">Mesajlaşma</h6 >
+                </a>
+              </li>
+              <li class="nav-item border-end border-2">
+                <a class="nav-link nav-menu me-4" href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    <h6 class ="mt-2">Bildirimler</h6 >
+                </a>
+              </li>
+              <li class="nav-item dropdown me-4 nav-menu">
+                <img src="https://picsum.photos/id/8/30/30" class="rounded-circle" alt="">
+                <a class="nav-link nav-menu dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <h6>Ben</h6>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class=" nav-item ">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        İş
+                    </a>
+                </button>
+              </li>
+  
+            </ul>
+            
+          </div>
+        </div>
+    </nav> <!--Navbar End-->
+  
+    <div class="container ">
+        <div class="row" style="margin-top : 100px;">
+            <div class="col-sm-2 ">
+              <div class="card" >
+                <div class="card-body ">
+                  <div class="profile" style="align-items: center;">
+                    <img src="https://picsum.photos/id/48/450/300" class=" card-img-top list-group list-group-flush" alt="...">
+                  <h5>Name</h5>
+                  <h6 class="inline-block">Job</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                  <li class="list-group-item ">
+                    <div class="profile-info d-flex mb-2">
+                      <h6 class="text-secondary">Kişi profilinizi görüntüledi </h6> 
+                      <span class="text-primary ">73</span>
+                    </div>
+                    <div class="profile-info d-flex">
+                      <h6 class="text-secondary">Gönderiniz için Gösterim </h6> 
+                      <span class="text-primary ">73</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <h6 class="text-secondary ms-2">Ögelerim</h6>
+                  </li>
+                 </ul>
+                </div>  
+              </div>
+              <div class="card mt-5" >
+                <div class="card-body">
+                  <div class="card-number">
+                    <h6 class="text-secondary">En Yeni</h6>
+                  <div class="list-group "  >
+                    <a href="#" class="list-group-item-action " aria-current="true">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="group-nm">Staj Dünyasi</span>
+                    </a>
+                    <a href="#" class="list-group-item-action">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="group-nm">Staj Dünyasi</span>
+                    </a>
+                    <a href="#" class="list-group-item-action">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="group-nm">Staj Dünyasi</span>
+                    </a>
+                    <a href="#" class="list-group-item-action">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="group-nm">Staj Dünyasi</span>
+                    </a>
+                    <a class="list-group-item-action disabled">
+                      <i class="fa-solid fa-users"></i>
+                      <span class="group-nm">Staj Dünyasi</span>
+                    </a>
+                  </div>
+                </div> 
+                <div class="card-number mt-3">
+                  <h6 class="text-primary" > Gruplar</h6>
+                <div class="list-group "  >
+                  <a href="#" class="list-group-item-action " aria-current="true">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="group-nm">Mühendislik Dünyası</span>
+                  </a>
+                  <a href="#" class="list-group-item-action">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="group-nm">Mühendislik Dünyası</span>
+                  </a>
+                  <a href="#" class="list-group-item-action">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="group-nm">Mühendislik Dünyası</span>
+                  </a>
+                  <a href="#" class="list-group-item-action">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="group-nm">Mühendislik Dünyası</span>
+                  </a>
+                  <a class="list-group-item-action disabled">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="group-nm">Mühendislik Dünyası</span>
+                  </a>
+                </div>
+              </div>   
+              <div class="card-footer">
+                  <h6 class="text-secondary">Daha fazla keşfet</h6>
+                </div>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-sm-6" >
+              <div class="card ">
+                <div class="card-body">
+                  <div class="div">
+                    <img src="https://picsum.photos/id/45/50/50" class="rounded-circle me-5" alt="">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill" style="width:80%">Gönderi Başlat</button>
+                  </div>
+                  <div class="post-button d-flex justify-content-between mt-2">
+                    <button type="button" class="btn btn-outline-secondary  ">
+                      <i class="fa-solid fa-image fa-2x me-2"></i>
+                      <span class="">Görsel</span>  
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-video fa-2x me-2"></i>
+                      <span class="">Video</span>  
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa-regular fa-calendar fa-2x me-2"></i>
+                      <span class="">Etkinlik </span>  
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa-regular fa-newspaper fa-2x me-2"></i>
+                      <span class="">Yazı yaz</span> 
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-5" >
+                  <div class="card-body"> 
+                    <div class="post-profile d-flex flex-row">                     
+                      <img src="https://picsum.photos/id/47/50/50" alt="" class="rounded-circle d-flex me-3 ">
+                          <div class="post-name">
+                          <h6 class="text-dark fw-bold">Selen Savcı</h6>
+                          <h6 class ="text-secondary">Trendyol grup</h6>
+                          <h6 class="text-secondary" >26 dakika </h6>
+                        </div>   
+                      </div>
+                        <div class="post-describtion">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloribus!
+                        </div>
+                        <img src="https://picsum.photos/id/4/550/350" class="card-img" alt="...">
+                        <div class="post-information">
+                          <i class="fa-solid fa-hands-clapping"></i>
+                          <i class="fa-solid fa-thumbs-up"></i>
+                          <span class="group-nm">Erencan Hunt ve 8373 kişi </span>
+                          <span class = "group-nm">65 yorum 65 paylaşım</span>
+                        </div>
+                        <div class="post-button d-flex justify-content-between px-3">
+                          <button type="button" class="btn btn-outline-secondary  ">
+                            <i class="fa-solid fa-thumbs-up fa-2x me-2  "></i>
+                            <span class="">Beğen</span>  
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-regular fa-comment-dots fa-2x me-2" ></i>
+                            <span class="">Yorum Yap</span>  
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-retweet fa-2x me-2" ></i>
+                            <span class="">Paylaş </span>  
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-paper-plane fa-2x me-2" ></i>
+                            <span class="">Gönder</span> 
+                          </button>
+                        </div>      
+                </div>
+              </div>
+              <div class="card mt-5" >
+                <div class="card-body"> 
+                  <div class="post-profile d-flex flex-row">                     
+                    <img src="https://picsum.photos/id/45/50/50" alt="" class="rounded-circle d-flex me-3 ">
+                        <div class="post-name">
+                        <h6 class="text-dark fw-bold">Selen Savcı</h6>
+                        <h6 class ="text-secondary">Trendyol grup</h6>
+                        <h6 class="text-secondary" >26 dakika </h6>
+                      </div>   
+                    </div>
+                      <div class="post-describtion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloribus!
+                      </div>
+                      <img src="https://picsum.photos/id/85/550/350" class="card-img" alt="...">
+                      <div class="post-information">
+                        <i class="fa-solid fa-hands-clapping"></i>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span class="group-nm">Erencan Hunt ve 8373 kişi </span>
+                        <span class = "group-nm">65 yorum 65 paylaşım</span>
+                      </div>
+                      <div class="post-button d-flex justify-content-between px-3">
+                        <button type="button" class="btn btn-outline-secondary  ">
+                          <i class="fa-solid fa-thumbs-up fa-2x me-2  "></i>
+                          <span class="">Beğen</span>  
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-regular fa-comment-dots fa-2x me-2" ></i>
+                          <span class="">Yorum Yap</span>  
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-retweet fa-2x me-2" ></i>
+                          <span class="">Paylaş </span>  
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-paper-plane fa-2x me-2" ></i>
+                          <span class="">Gönder</span> 
+                        </button>
+                      </div>
+                  
+              
+              </div>
+
+
+            </div>
+            </div>
+          
+          <div class="col-sm-4" >
+            <div class="card">
+              <div class="card-body">
+                <div class="title d-flex flex-row justify-content-between">
+                  <span class="fw-bold text-dark ">Akışınıza ekleyin</span>
+                  <i class="fa-solid fa-info "></i>
+                </div>
+                <div class="people d-flex flex-row mt-3">  
+                  <div class="profile-follow">
+                    <img src="https://picsum.photos/id/99/50/50" alt="" class="rounded-circle d-flex me-3 ">                     
+                  </div>             
+                  <div class="follow">
+                    <h6 class="text-dark fw-bold">Technology</h6>
+                    <h6 class ="text-secondary">Şirket</h6>
+                    <button type="button"  class="btn btn-outline-secondary rounded-pill mt-2 px-4">
+                      <i class="fa-solid fa-plus fa-sm"></i>
+                      <span class="small">Takip Et</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="people d-flex flex-row mt-4">  
+                  <div class="profile-follow">
+                    <img src="https://picsum.photos/id/49/50/50" alt="" class="rounded-circle d-flex me-3 ">                     
+                  </div>             
+                  <div class="follow">
+                    <h6 class="text-dark fw-bold">Technology</h6>
+                    <h6 class ="text-secondary">Şirket</h6>
+                    <button type="button"  class="btn btn-outline-secondary rounded-pill mt-2 px-4">
+                      <i class="fa-solid fa-plus fa-sm"></i>
+                      <span class="small">Takip Et</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="people d-flex flex-row mt-4">  
+                  <div class="profile-follow">
+                    <img src="https://picsum.photos/id/85/50/50" alt="" class="rounded-circle d-flex me-3 ">                     
+                  </div>             
+                  <div class="follow">
+                    <h6 class="text-dark fw-bold">Technology</h6>
+                    <h6 class ="text-secondary">Şirket</h6>
+                    <button type="button"  class="btn btn-outline-secondary rounded-pill mt-2 px-4">
+                      <i class="fa-solid fa-plus fa-sm"></i>
+                      <span class="small">Takip Et</span>
+                    </button>
+                  </div>
+                </div>
+                  
+               
+              </div>
+            </div>
+              <footer class="mt-4">
+               <a href="#" ><span class="footer-info me-4">Hakkında</span></a>
+               <a href="#" ><span class="footer-info me-4">Erişebilirlik</span></a>
+               <a href="#" ><span class="footer-info me-4">Yardım Merkezi</span></a>
+               <a href="#" ><span class="footer-info me-4">Gizlilik ve Koşullar</span></a>
+               <a href="#" ><span class="footer-info me-4">Reklam</span></a>
+               <a href="#" ><span class="footer-info me-4">Reklam Tercihleri</span></a>
+
+              </footer>
+            
+          </div>
+        
+    </div>
+
+
+
+    <!--Off-set -->
+   <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+            I will not close if you click outside of me.
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
